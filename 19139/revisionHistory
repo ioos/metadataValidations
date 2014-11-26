@@ -1,0 +1,308 @@
+Revision: 41414
+Author: amilan
+Date: Monday, February 25, 2013 1:46:36 PM
+Message:
+added: <xs:element name="levelOfDetail" type="gco:CharacterString_PropertyType"/> to MD_Resolution_Type in identification.xsd
+----
+Modified : /nmmr/metadata1/ISOSchemas/gmd/identification.xsd
+
+Revision: 41366
+Author: amilan
+Date: Friday, February 15, 2013 4:09:46 PM
+Message:
+Added:		<xs:element name="temporalResolution" type="gts:TM_PeriodDuration_PropertyType" minOccurs="0" maxOccurs="unbounded"> <xs:annotation> <xs:documentation>resolution of the resource with respect to time</xs:documentation> </xs:annotation> </xs:element>
+
+----
+Modified : /nmmr/metadata1/ISOSchemas/gmd/identification.xsd
+
+Revision: 40593
+Author: amilan
+Date: Thursday, November 01, 2012 3:20:25 PM
+Message:
+Added numberOfValues to MD_RangeDimension_Type in content.xsd. 
+----
+Modified : /nmmr/metadata1/ISOSchemas/gmd/content.xsd
+
+Revision: 40592
+Author: amilan
+Date: Thursday, November 01, 2012 2:40:00 PM
+Message:
+Added meanValue and standardDeviation to MD_RangeDimension_Type in content.xsd. 
+----
+Modified : /nmmr/metadata1/ISOSchemas/gmd/content.xsd
+
+Revision: 40467
+Author: amilan
+Date: Wednesday, October 24, 2012 12:52:07 PM
+Message:
+Replaced 
+<xs:element name="name" type="gco:MemberName_Type"/> with 
+<xs:element name="name" type="gco:MemberName_PropertyType"/>
+
+----
+Modified : /nmmr/metadata1/ISOSchemas/srv/serviceMetadata.xsd
+
+Revision: 18932
+Author: amilan
+Date: Monday, November 28, 2011 5:31:03 PM
+Message:
+changed scienceParty to collaborator to match ISO 19115-1 revisions. Added dataResolution to keyword type codes
+----
+Modified : /nmmr/metadata1/ISOSchemas/resources/Codelist/gmxCodelists.xml
+
+Revision: 8371
+Author: amilan
+Date: Monday, May 09, 2011 11:08:37 AM
+Message:
+Change conditionality of gmd:cornerPoints back to original state (<xs:element name="cornerPoints" type="gss:GM_Point_PropertyType" minOccurs="0" maxOccurs="unbounded"/>) in spatialRepresentation.xsd
+----
+Modified : /nmmr/metadata1/ISOSchemas/gmd/spatialRepresentation.xsd
+
+Revision: 5717
+Author: amilan
+Date: Tuesday, April 12, 2011 10:11:14 AM
+Message:
+Changed conditionality of cornerPoints to comply with rules published in standard. <xs:element name="cornerPoints" type="gss:GM_Point_PropertyType" minOccurs="0" maxOccurs="unbounded"/> to <xs:element name="cornerPoints" type="gss:GM_Point_PropertyType"/> 
+
+----
+Modified : /nmmr/metadata1/ISOSchemas/gmd/spatialRepresentation.xsd
+
+Revision: 5437
+Author: amilan
+Date: Wednesday, March 23, 2011 1:54:29 PM
+Message:
+Initial commit of gfc xsd for feature catalogs. 
+----
+Added : /nmmr/metadata1/ISOSchemas/gfc
+Added : /nmmr/metadata1/ISOSchemas/gfc/featureCataloging.xsd
+Added : /nmmr/metadata1/ISOSchemas/gfc/gfc.xsd
+
+Revision: 5436
+Author: amilan
+Date: Wednesday, March 23, 2011 1:01:15 PM
+Message:
+Old: schemaLocation="http://schemas.opengis.net/xlink/1.0.0/xlinks.xsd"/>
+New: schemaLocation="../xlink/xlinks.xsd" 
+in gmlBase.xsd
+----
+Modified : /nmmr/metadata1/ISOSchemas/gml/gmlBase.xsd
+
+Revision: 5435
+Author: amilan
+Date: Wednesday, March 23, 2011 12:42:49 PM
+Message:
+Removed http://schemas.opengis.net/iso/19139/20070417 from import namespace schemaLocation in GML files.
+----
+Modified : /nmmr/metadata1/ISOSchemas/gml/coordinateOperations.xsd
+Modified : /nmmr/metadata1/ISOSchemas/gml/referenceSystems.xsd
+
+Revision: 4957
+Author: amilan
+Date: Monday, February 28, 2011 1:39:41 PM
+Message:
+GML 3.2 name space support.
+----
+Modified : /nmmr/metadata1/ISOSchemas/resources/uom/ML_gmxUom.xml
+Modified : /nmmr/metadata1/ISOSchemas/resources/uom/gmxUom.xml
+
+Revision: 4956
+Author: amilan
+Date: Monday, February 28, 2011 1:39:29 PM
+Message:
+GML 3.2 name space support.
+----
+Modified : /nmmr/metadata1/ISOSchemas/resources/example/fr-fr.xml
+
+Revision: 4955
+Author: amilan
+Date: Monday, February 28, 2011 1:39:01 PM
+Message:
+GML 3.2 name space support.
+----
+Modified : /nmmr/metadata1/ISOSchemas/resources/crs/ML_gmxCrs.xml
+Modified : /nmmr/metadata1/ISOSchemas/resources/crs/gmxCrs.xml
+
+Revision: 4954
+Author: amilan
+Date: Monday, February 28, 2011 1:38:35 PM
+Message:
+GML 3.2 name space support.
+----
+Modified : /nmmr/metadata1/ISOSchemas/resources/Codelist/ML_gmxCodelists.xml
+Modified : /nmmr/metadata1/ISOSchemas/resources/Codelist/gmxCodelists.xml
+
+Revision: 4953
+Author: amilan
+Date: Monday, February 28, 2011 1:38:00 PM
+Message:
+GML 3.2 name space support.
+----
+Modified : /nmmr/metadata1/ISOSchemas/mf/coverageMeasures.xsd
+
+Revision: 4952
+Author: amilan
+Date: Monday, February 28, 2011 1:37:42 PM
+Message:
+GML 3.2 namespace support.
+----
+Modified : /nmmr/metadata1/ISOSchemas/gts/temporalObjects.xsd
+
+Revision: 4951
+Author: amilan
+Date: Monday, February 28, 2011 1:37:25 PM
+Message:
+New GML 3.2 name space support.
+----
+Modified : /nmmr/metadata1/ISOSchemas/gss/geometry.xsd
+
+Revision: 4948
+Author: amilan
+Date: Monday, February 28, 2011 1:33:32 PM
+Message:
+New GML 3.2 name space support.
+----
+Modified : /nmmr/metadata1/ISOSchemas/gsr/spatialReferencing.xsd
+
+Revision: 4947
+Author: amilan
+Date: Monday, February 28, 2011 1:33:23 PM
+Message:
+New GML 3.2 name space support.
+----
+Modified : /nmmr/metadata1/ISOSchemas/gmx/codelistItem.xsd
+Modified : /nmmr/metadata1/ISOSchemas/gmx/crsItem.xsd
+Modified : /nmmr/metadata1/ISOSchemas/gmx/uomItem.xsd
+
+Revision: 4946
+Author: amilan
+Date: Monday, February 28, 2011 1:33:11 PM
+Message:
+New GML 3.2 name space support.
+----
+Added : /nmmr/metadata1/ISOSchemas/gml/gml_3_2_1-ReadMe.txt
+
+Revision: 4945
+Author: amilan
+Date: Monday, February 28, 2011 1:32:49 PM
+Message:
+New GML 3.2 name space support.
+----
+Added : /nmmr/metadata1/ISOSchemas/gml/SchematronConstraints.xml
+Added : /nmmr/metadata1/ISOSchemas/gml/defaultStyle.xsd
+Added : /nmmr/metadata1/ISOSchemas/gml/deprecatedTypes.xsd
+
+Revision: 4944
+Author: amilan
+Date: Monday, February 28, 2011 1:32:22 PM
+Message:
+New GML 3.2 name space support.
+----
+Modified : /nmmr/metadata1/ISOSchemas/gml/basicTypes.xsd
+Modified : /nmmr/metadata1/ISOSchemas/gml/coordinateOperations.xsd
+Modified : /nmmr/metadata1/ISOSchemas/gml/coordinateReferenceSystems.xsd
+Modified : /nmmr/metadata1/ISOSchemas/gml/coordinateSystems.xsd
+Modified : /nmmr/metadata1/ISOSchemas/gml/coverage.xsd
+Modified : /nmmr/metadata1/ISOSchemas/gml/datums.xsd
+Modified : /nmmr/metadata1/ISOSchemas/gml/dictionary.xsd
+Modified : /nmmr/metadata1/ISOSchemas/gml/direction.xsd
+Modified : /nmmr/metadata1/ISOSchemas/gml/dynamicFeature.xsd
+Modified : /nmmr/metadata1/ISOSchemas/gml/feature.xsd
+Modified : /nmmr/metadata1/ISOSchemas/gml/geometryAggregates.xsd
+Modified : /nmmr/metadata1/ISOSchemas/gml/geometryBasic0d1d.xsd
+Modified : /nmmr/metadata1/ISOSchemas/gml/geometryBasic2d.xsd
+Modified : /nmmr/metadata1/ISOSchemas/gml/geometryComplexes.xsd
+Modified : /nmmr/metadata1/ISOSchemas/gml/geometryPrimitives.xsd
+Modified : /nmmr/metadata1/ISOSchemas/gml/gml.xsd
+Modified : /nmmr/metadata1/ISOSchemas/gml/gmlBase.xsd
+Modified : /nmmr/metadata1/ISOSchemas/gml/grids.xsd
+Modified : /nmmr/metadata1/ISOSchemas/gml/measures.xsd
+Modified : /nmmr/metadata1/ISOSchemas/gml/observation.xsd
+Modified : /nmmr/metadata1/ISOSchemas/gml/readme.txt
+Modified : /nmmr/metadata1/ISOSchemas/gml/referenceSystems.xsd
+Modified : /nmmr/metadata1/ISOSchemas/gml/temporal.xsd
+Modified : /nmmr/metadata1/ISOSchemas/gml/temporalReferenceSystems.xsd
+Modified : /nmmr/metadata1/ISOSchemas/gml/temporalTopology.xsd
+Modified : /nmmr/metadata1/ISOSchemas/gml/topology.xsd
+Modified : /nmmr/metadata1/ISOSchemas/gml/units.xsd
+Modified : /nmmr/metadata1/ISOSchemas/gml/valueObjects.xsd
+
+Revision: 4943
+Author: amilan
+Date: Monday, February 28, 2011 1:31:59 PM
+Message:
+New GML 3.2 name space support.
+----
+Modified : /nmmr/metadata1/ISOSchemas/gmi/spatialRepresentationInformation.xsd
+
+Revision: 4942
+Author: amilan
+Date: Monday, February 28, 2011 1:31:47 PM
+Message:
+New GML 3.2 name space support.
+----
+Modified : /nmmr/metadata1/ISOSchemas/gco/basicTypes.xsd
+Modified : /nmmr/metadata1/ISOSchemas/gco/gcoBase.xsd
+
+Revision: 1245
+Author: darmel
+Date: Thursday, August 19, 2010 4:48:10 PM
+Message:
+Added modelResult to MD_CoverageContentTypeCode
+----
+Modified : /nmmr/metadata1/ISOSchemas/resources/Codelist/gmxCodelists.xml
+
+Revision: 1146
+Author: darmel
+Date: Wednesday, August 11, 2010 12:13:06 PM
+Message:
+Added codewords to RoleCode, InitiativeTypeCode, CoverageContentTypeCode, and KeywordTypeCode. Added MI_Codelists from 19115-2. Details in document.
+----
+Modified : /nmmr/metadata1/ISOSchemas/resources/Codelist/gmxCodelists.xml
+
+Revision: 539
+Author: amilan
+Date: Friday, March 05, 2010 3:16:10 PM
+Message:
+removed extra dash in MX_ScopeCode comment section
+----
+Modified : /nmmr/metadata1/ISOSchemas/resources/Codelist/gmxCodelists.xml
+
+Revision: 256
+Author: amilan
+Date: Thursday, May 21, 2009 4:32:29 PM
+Message:
+Edits for consistency with ISO 19115-2 
+MI_Operation_Type
+* added: <xs:element name="identifier" type="gmd:MD_Identifier_PropertyType"/>
+* added: <xs:element name="type" type="gmi:MI_OperationTypeCode_PropertyType" minOccurs="0" maxOccurs="1"/>
+* Added: <xs:element name="MI_OperationTypeCode" type="gco:CodeListValue_Type" substitutionGroup="gco:CharacterString"/>
+*Added: <xs:complexType name="MI_OperationTypeCode_PropertyType"><xs:sequence><xs:element ref="gmi:MI_OperationTypeCode" minOccurs="0"/></xs:sequence><xs:attribute ref="gco:nilReason"/></xs:complexType>
+----
+Modified : /nmmr/metadata1/ISOSchemas/gmi/acquisitionInformation.xsd
+
+Revision: 255
+Author: amilan
+Date: Thursday, April 30, 2009 2:05:57 PM
+Message:
+Edited elements for consistency with ISO 19115-2 UML. Detailed notes are included in files: acquisitionInformation.xsd, contentInformation.xsd, spatialRepresentationInformation.xsd. 
+----
+Modified : /nmmr/metadata1/ISOSchemas/gmi/acquisitionInformation.xsd
+Modified : /nmmr/metadata1/ISOSchemas/gmi/contentInformation.xsd
+Modified : /nmmr/metadata1/ISOSchemas/gmi/spatialRepresentationInformation.xsd
+
+Revision: 254
+Author: amilan
+Date: Thursday, April 30, 2009 11:24:26 AM
+Message:
+Edited MI_Instrument_Type and MI_Platform_Type in acquisitionInformation.xsd. 
+
+----
+Modified : /nmmr/metadata1/ISOSchemas/gmi/acquisitionInformation.xsd
+<hr/>
+Revision: 253
+Author: amilan
+Date: Thursday, April 30, 2009 10:31:19 AM
+Message:
+Initial copy of 19115, 19115-2, 19119 combined XSDs created by Eden. Currently posted at http://ngdc.noaa.gov/metadata/published/xsd/schema.xsd
+
+
